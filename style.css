@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav{
+    height: 10vh;
+    display: flex;
+    padding: 0 60px 0 60px;
+    align-items: center;
+    justify-content: space-between;
+    position:static;
+    margin-bottom: 2vh;
+}
+
+#logo{
+    font-size: 1.3rem;
+}
+
+#pages a{
+    margin: 0 40px;
+    height: 40px;
+    font-size: 1.3rem;
+}
+
+#name{
+    font-family: "Oswald", serif;
+    font-size: 23vh;
+}
+
+#footer{
+    background-color: black;
+    color:white;
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", serif;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+a{
+    font-family: "Oswald", serif;
+}
+
+#intro{
+    font-family:"Oswald", serif; 
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+#engineer{
+    display: flex;
+    justify-content: flex-end;
+    position: static;
+    margin-right: 5vw;
+}
+
+#gDesigner{
+    display: flex;
+    justify-content: flex-start;
+    position: static;
+    margin-left: 5vw;
+}
+
+#gDesigner, #engineer{
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* margin: 50px 0 5px 0;*/
+    position: relative;
+    z-index: 0; /* Places the text behind the image */
+}
+
+#image {
+    position: absolute; /* Positions the image over the text */
+    top: 250px; /* Positions the image at the top of the container */
+    left: 50%; /* Centers the image horizontally */
+    transform: translateX(-50%); /* Adjusts to truly center the image */
+    width: 60vh; /* Increased size of the image (from 40vh to 60vh) */
+    height: 60vh; /* Increased size of the image (from 40vh to 60vh) */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    z-index: 1; /* Ensures the image is above the text */
+}
+
+
+
